@@ -1,0 +1,11 @@
+{
+    "name": "mn-webpage",
+    "description": "Personal webpage",
+    "version": "0.0.1",
+    "author": "Marcus Nielsen",
+    "private": true,
+    "dependencies": {
+        "express": "latest",
+        "mongoose": "latest"
+    }
+}
