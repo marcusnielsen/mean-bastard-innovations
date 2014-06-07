@@ -6,6 +6,7 @@
     "private": true,
     "dependencies": {
         "express": "latest",
-        "mongoose": "latest"
+        "mongoose": "latest",
+        "swig": "latest"
     }
 }
