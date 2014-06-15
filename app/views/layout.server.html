@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html data-ng-app="mn-core" data-ng-controller="coreCtrl" lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>{{title}}</title>
@@ -14,17 +14,21 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.1.1/yeti/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body class="ng-cloak">
-<header class="navbar navbar-fixed-top navbar-inverse">
-    TODO: Header menu
-</header>
+<header data-ng-include="'/core/views/header.client.html'" class="navbar navbar-static-top"></header>
 <section class="content">
     <section class="container">
         {% block content %}{% endblock %}
     </section>
 </section>
 </body>
-
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.js"></script>
+<script src="../../core/core.js"></script>
+<script src="../../core/coreCtrl.js"></script>
+<script src="../../core/headerCtrl.js"></script>
 </html>
