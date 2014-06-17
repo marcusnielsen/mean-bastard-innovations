@@ -6,5 +6,5 @@ module.exports = {
         description: 'Official web page of Marcus Nielsen'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/vanilla-webpage'
+    db: 'mongodb://localhost/vanilla-webpage' //TODO: Set real database
 };

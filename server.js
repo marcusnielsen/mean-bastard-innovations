@@ -2,7 +2,8 @@
 
 var config = require('./app/config/env/all.js');
 var mongoose = require('mongoose');
-var db = mongoose.connect(config.db);
+//TODO: Setup with MongoLabs when needed.
+// var db = mongoose.connect(config.db);
 //TODO: require('../passport/passport.js')();
 var app = require('./app/express/express.js')(db, config);
 
