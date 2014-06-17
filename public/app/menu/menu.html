@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <a href="" data-ui-sref="{{menu.brandMenuItem.sref}}" class="navbar-brand" data-ng-bind="menu.brandMenuItem.title"></a>
+        </div>
+        <nav role="navigation">
+            <ul class="nav navbar-nav">
+                <li data-ng-class="{active: menu.isActive(menuItem.sref)}" data-ng-repeat="menuItem in menu.navigationItems">
+                    <a href="" data-ui-sref="{{menuItem.sref}}">
+                         <span data-ng-bind="menuItem.title"></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                <button type="button" class="btn btn-default navbar-btn" data-ng-click="theme.swap()">
+                    <i class="fa fa-lightbulb-o" data-ng-class="{'text-warning': theme.name === 'flatly'}"></i>
+                </button>
+            </ul>
+            </div>
+        </nav>
+    </div>
+</nav>

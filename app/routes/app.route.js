@@ -7,5 +7,9 @@ module.exports = function (express, app, config) {
         res.render('index.server.html', {title: config.app.title});
     });
 
+    router.get('/404', function (req, res) {
+        res.render('404.server.html', {message: 'The path was not found.'});
+    });
+
     app.use('/', router);
 };
