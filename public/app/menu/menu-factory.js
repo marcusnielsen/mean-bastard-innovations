@@ -1,11 +1,7 @@
 'use strict';
 
 angular.module('app').factory('menuFactory', ['$state', 'themeFactory', function ($state, themeFactory) {
-    var isActive = function (sref) {
-        return $state.includes(sref);
-    };
-
-    return {
+    var factory = {
         brandMenuItem: {title: 'MBI', sref: 'home'},
         navigationItems: [
             {title: 'Home', sref:'home'},
@@ -14,7 +10,14 @@ angular.module('app').factory('menuFactory', ['$state', 'themeFactory', function
         settingsItems: [
             {title: 'Language', command: 'TODO'},
             {title: 'Theme', command: 'TODO'}
-        ],
-        isActive: isActive
+        ]
     };
+
+    factory.isActive = function (sref) {
+        return $state.includes(sref);
+    };
+
+    factory.isCollapsed = true;
+
+    return factory;
 }]);

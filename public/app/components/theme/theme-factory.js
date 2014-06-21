@@ -4,7 +4,7 @@ angular.module('app').factory('themeFactory', ['$http', function ($http) {
     var publicObj = {};
 
     publicObj.selected = {
-        name: 'flatly',
+        name: 'Flatly',
         cssCdn: '//netdna.bootstrapcdn.com/bootswatch/latest/flatly/bootstrap.min.css'
     };
 

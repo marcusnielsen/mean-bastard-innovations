@@ -1,9 +1,15 @@
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-ng-click="menu.isCollapsed = !menu.isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
                 <a href="" data-ui-sref="{{menu.brandMenuItem.sref}}" class="navbar-brand" data-ng-bind="menu.brandMenuItem.title"></a>
         </div>
-        <nav role="navigation">
+        <nav class="navbar-collapse" data-ng-class="menu.isCollapsed ? 'collapse' : 'in'" role="navigation">
             <ul class="nav navbar-nav">
                 <li data-ng-class="{active: menu.isActive(menuItem.sref)}" data-ng-repeat="menuItem in menu.navigationItems">
                     <a href="" data-ui-sref="{{menuItem.sref}}">
