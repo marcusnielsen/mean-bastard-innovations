@@ -1,6 +1,10 @@
 'use strict';
 
-angular.module('app').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+angular.module('app').config(['$compileProvider', '$stateProvider', '$urlRouterProvider',
+    function($compileProvider, $stateProvider, $urlRouterProvider){
+
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|tel):/);
+
     $urlRouterProvider.otherwise('/');
 
     $stateProvider

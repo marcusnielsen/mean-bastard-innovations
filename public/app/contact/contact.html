@@ -1,1 +1,51 @@
-contact.client.html
+<section class="row">
+    <div class="page-header">
+        <h1>Contact</h1>
+    </div>
+</section>
+
+<section class="row">
+    <h2>
+        <img data-ng-src="{{contact.gravatar}}" class="img-circle" alt="gravatar profile image"/>
+        <span data-ng-bind="contact.name"></span>
+    </h2>
+</section>
+<section class="row">
+    <dl class="dl-horizontal">
+        <dt>E-mail</dt>
+        <dd>
+            <a data-ng-href="mailto://{{contact.email}}" data-ng-bind="contact.email"></a>
+        </dd>
+
+        <dt>Phone</dt>
+        <dd>
+            <a data-ng-href="tel:{{contact.phone}}" data-ng-bind="contact.phone"></a>
+        </dd>
+
+        <dt>LinkedIn profile</dt>
+        <dd>
+            <a data-ng-href="{{contact.linkedIn}}" target="_blank">
+                <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x25.png" alt="View Marcus Nielsen's profile on LinkedIn">
+            </a>
+        </dd>
+
+        <dt>Location</dt>
+        <dd>
+            <a data-ng-href="{{contact.getGoogleMapsLinkUrl()}}" target="_blank">
+                <span data-ng-bind="contact.street"></span>
+                <span data-ng-bind="contact.streetCode"></span>,
+                <span data-ng-bind="contact.town"></span>,
+                <span data-ng-bind="contact.country"></span>
+            </a>
+        </dd>
+    </dl>
+
+    <section class="row">
+        <iframe
+                class="col-xs-12 col-md-6"
+                height="450"
+                frameborder="0" style="border:0"
+                data-ng-src="{{contact.getGoogleMapsEmbeddedUrl()}}">
+        </iframe>
+    </section>
+</section>
