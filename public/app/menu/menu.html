@@ -12,11 +12,19 @@
                 </li>
             </ul>
             <div class="navbar-right">
-            <ul class="nav navbar-nav">
-                <button type="button" class="btn btn-warning navbar-btn" data-ng-click="theme.setRandomTheme()">
-                    <i class="fa fa-lightbulb-o"></i>
-                </button>
-            </ul>
+                <div class="nav navbar-nav">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning navbar-btn dropdown-toggle">
+                            Change theme
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li data-ng-repeat="themeItem in theme.themes" data-ng-class="{'active': theme.isThemeNameSelected(themeItem.name) }">
+                                <a href="" data-ng-click="theme.setTheme(themeItem)" data-ng-bind="themeItem.name"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>

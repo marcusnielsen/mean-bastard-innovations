@@ -16,8 +16,12 @@ angular.module('app').factory('themeFactory', ['$http', function ($http) {
         });
     });
 
-    publicObj.setRandomTheme = function () {
-        publicObj.selected = publicObj.themes[Math.floor(Math.random() * publicObj.themes.length)];
+    publicObj.setTheme = function (theme) {
+        publicObj.selected = _.cloneDeep(theme);
+    };
+
+    publicObj.isThemeNameSelected = function (themeName) {
+        return publicObj.selected.name === themeName;
     };
 
     return publicObj;
