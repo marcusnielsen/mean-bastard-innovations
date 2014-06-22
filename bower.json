@@ -1,0 +1,21 @@
+{
+  "name": "mean-bastard-innovations",
+  "version": "0.1.0",
+  "homepage": "https://github.com/marcusnielsen/mean-bastard-innovations",
+  "authors": [
+    "Marcus Nielsen <marcus.nielsen82@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-translate": "~2.2.0"
+  }
+}
