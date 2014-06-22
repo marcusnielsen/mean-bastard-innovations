@@ -1,0 +1,16 @@
+{
+    "HOME": "Startsida",
+    "CONTACT": "Kontakta",
+    "CHANGE_THEME": "Byt tema",
+    "CHANGE_LANGUAGE": "Byt språk",
+    "USP": "Kvalitet kostar mindre",
+    "HOME_P1": "Hej, jag heter {{AUTHOR}} och det här är mitt företag; {{MBI}}.",
+    "HOME_P2": "{{MEAN}} är en javascript full-stack baserad på",
+    "AND": "och",
+    "HOME_P3": "Ordet {{BASTARD}} symboliserar min kunskap inom .NET och min förmåga att tillämpa MEAN-stacken som komplement till Microsofts teknologier.",
+    "HOME_P4": "{{INNOVATIONS}} (innovationer) skapas genom att arbeta i det outforskade, genom att hitta framgång i förutsedda risker eller till och med genom misslyckanden. Och viktigast av allt - sätta produkten först!",
+    "EMAIL": "E-post",
+    "PHONE": "Telefon",
+    "LINKEDIN_PROFILE": "LinkedIn profil",
+    "LOCATION": "Placering"
+}

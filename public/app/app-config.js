@@ -1,21 +1,29 @@
 'use strict';
 
-angular.module('app').config(['$compileProvider', '$stateProvider', '$urlRouterProvider',
-    function($compileProvider, $stateProvider, $urlRouterProvider){
+angular.module('app').config(['$compileProvider', '$translateProvider', '$stateProvider', '$urlRouterProvider',
+    function($compileProvider, $translateProvider, $stateProvider, $urlRouterProvider){
 
-    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|tel):/);
-
-    $urlRouterProvider.otherwise('/');
-
-    $stateProvider
-        .state('home', {
-            url: '/',
-            templateUrl: 'app/home/home.html',
-            controller: 'homeController'
-        })
-        .state('contact', {
-            url: '/contact',
-            templateUrl: 'app/contact/contact.html',
-            controller: 'contactController'
+        $translateProvider.useStaticFilesLoader({
+            prefix: '/localization/',
+            suffix: '.json'
         });
+
+        $translateProvider.determinePreferredLanguage();
+        $translateProvider.fallbackLanguage('en_US');
+
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|tel):/);
+
+        $urlRouterProvider.otherwise('/');
+
+        $stateProvider
+            .state('home', {
+                url: '/',
+                templateUrl: 'app/home/home.html',
+                controller: 'homeController'
+            })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: 'app/contact/contact.html',
+                controller: 'contactController'
+            });
 }]);

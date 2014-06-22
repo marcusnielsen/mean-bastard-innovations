@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular-translate": "~2.2.0"
+    "angular-translate": "latest",
+    "angular-translate-loader-static-files": "latest"
   }
 }

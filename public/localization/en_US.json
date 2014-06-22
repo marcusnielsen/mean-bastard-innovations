@@ -1,0 +1,16 @@
+{
+    "HOME": "Home",
+    "CONTACT": "Contact",
+    "CHANGE_THEME": "Change theme",
+    "CHANGE_LANGUAGE": "Change language",
+    "USP": "Quality cost less",
+    "HOME_P1": "Hi, My name is {{AUTHOR}} and this is my company; {{MBI}}.",
+    "HOME_P2": "{{MEAN}} is a javascript full-stack including",
+    "AND": "and",
+    "HOME_P3": "The word {{BASTARD}} symbolizes my knowledge in .NET and the ability to apply the MEAN-stack upon Microsoft's technologies.",
+    "HOME_P4": "{{INNOVATIONS}} are made by working with the unknown, be able to harness success through foreseen risks or even failure. And most importantly of all -put the product first!",
+    "EMAIL": "E-mail",
+    "PHONE": "Phone",
+    "LINKEDIN_PROFILE": "LinkedIn profile",
+    "LOCATION": "Location"
+}

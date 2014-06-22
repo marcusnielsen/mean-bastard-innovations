@@ -1,15 +1,11 @@
 'use strict';
 
-angular.module('app').factory('menuFactory', ['$state', 'themeFactory', function ($state, themeFactory) {
+angular.module('app').factory('menuFactory', ['$state', function ($state) {
     var factory = {
         brandMenuItem: {title: 'MBI', sref: 'home'},
         navigationItems: [
-            {title: 'Home', sref:'home'},
-            {title: 'Contact', sref:'contact'}
-        ],
-        settingsItems: [
-            {title: 'Language', command: 'TODO'},
-            {title: 'Theme', command: 'TODO'}
+            {title: 'HOME', sref:'home'},
+            {title: 'CONTACT', sref:'contact'}
         ]
     };
 
