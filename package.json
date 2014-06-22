@@ -10,10 +10,14 @@
     },
     "private": true,
     "dependencies": {
+        "bower": "latest",
         "express": "latest",
         "mongoose": "latest",
         "swig": "latest",
         "body-parser": "latest",
         "path": "latest"
+    },
+    "scripts": {
+        "postinstall": "./node_modules/bower/bin/bower install"
     }
 }
