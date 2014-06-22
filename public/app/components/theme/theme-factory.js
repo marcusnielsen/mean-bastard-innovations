@@ -1,28 +1,28 @@
 'use strict';
 
 angular.module('app').factory('themeFactory', ['$http', function ($http) {
-    var publicObj = {};
+    var factory = {};
 
-    publicObj.selected = {
+    factory.selected = {
         name: 'Flatly',
         cssCdn: '//netdna.bootstrapcdn.com/bootswatch/latest/flatly/bootstrap.min.css'
     };
 
-    publicObj.themes = [];
+    factory.themes = [];
 
     $http.get('//api.bootswatch.com/3/').success(function (data) {
-        publicObj.themes = _.map(data.themes, function (theme) {
+        factory.themes = _.map(data.themes, function (theme) {
             return {name: theme.name, cssCdn: theme.cssCdn};
         });
     });
 
-    publicObj.setTheme = function (theme) {
-        publicObj.selected = _.cloneDeep(theme);
+    factory.setTheme = function (theme) {
+        factory.selected = _.cloneDeep(theme);
     };
 
-    publicObj.isThemeNameSelected = function (themeName) {
-        return publicObj.selected.name === themeName;
+    factory.isThemeNameSelected = function (themeName) {
+        return factory.selected.name === themeName;
     };
 
-    return publicObj;
+    return factory;
 }])
