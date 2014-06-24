@@ -8,8 +8,7 @@ angular.module('app').config(['$compileProvider', '$translateProvider', '$stateP
             suffix: '.json'
         });
 
-        $translateProvider.determinePreferredLanguage();
-        $translateProvider.fallbackLanguage('en_US');
+        $translateProvider.preferredLanguage('en_US');
 
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|tel):/);
 
