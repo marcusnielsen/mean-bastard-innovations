@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('app').factory('homeFactory', [function() {
+module.exports = [function() {
     return {
-
+        // Add stuff if needed.
     };
-}]);
+}];

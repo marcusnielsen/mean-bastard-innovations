@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app').factory('menuFactory', ['$state', function ($state) {
+module.exports = ['$state', function ($state) {
     var factory = {
         brandMenuItem: {title: 'MBI', sref: 'home'},
         navigationItems: [
@@ -16,4 +16,4 @@ angular.module('app').factory('menuFactory', ['$state', function ($state) {
     factory.isCollapsed = true;
 
     return factory;
-}]);
+}];

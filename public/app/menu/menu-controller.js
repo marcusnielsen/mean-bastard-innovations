@@ -1,5 +1,5 @@
 'use strict';
 
-angular.module('app').controller('menuController', ['$scope', 'menuFactory', function ($scope, menuFactory) {
-    $scope.menu = menuFactory;
-}]);
+module.exports = ['$scope', 'mnMenuFactory', function ($scope, mnMenuFactory) {
+    $scope.menu = mnMenuFactory;
+}];

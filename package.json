@@ -1,23 +1,41 @@
 {
-    "name": "mean-bastard-innovations",
-    "description": "MBI company web page",
-    "version": "0.1.0",
-    "author": "Marcus Nielsen",
-    "license": "MIT",
-    "repository" : {
-        "type": "git",
-        "url": "https://github.com/marcusnielsen/mean-bastard-innovations"
-    },
-    "private": true,
-    "dependencies": {
-        "bower": "latest",
-        "express": "latest",
-        "mongoose": "latest",
-        "swig": "latest",
-        "body-parser": "latest",
-        "path": "latest"
-    },
-    "scripts": {
-        "postinstall": "./node_modules/bower/bin/bower install"
-    }
+  "name": "mean-bastard-innovations",
+  "description": "MBI company web page",
+  "version": "0.1.0",
+  "author": "Marcus Nielsen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcusnielsen/mean-bastard-innovations"
+  },
+  "private": true,
+  "dependencies": {
+    "body-parser": "latest",
+    "bower": "latest",
+    "express": "latest",
+    "lodash": "latest",
+    "mongoose": "latest",
+    "swig": "latest"
+  },
+  "scripts": {
+    "install": "napa"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-ui-bootstrap": "angular-ui/bootstrap-bower",
+    "angular-ui-router": "angular-ui/ui-router",
+    "angular-translate": "angular-translate/bower-angular-translate",
+    "angular-translate-loader-static": "angular-translate/bower-angular-translate-loader-static-files"
+  },
+  "devDependencies": {
+    "napa": "latest",
+    "browserify": "latest",
+    "gulp": "latest",
+    "gulp-rimraf": "latest",
+    "gulp-uglify": "latest",
+    "gulp-streamify": "latest",
+    "gulp-jshint": "latest",
+    "watchify": "latest",
+    "vinyl-source-stream": "latest"
+  }
 }

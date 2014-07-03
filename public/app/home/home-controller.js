@@ -1,5 +1,5 @@
 'use strict';
 
-angular.module('app').controller('homeController', ['$scope', 'homeFactory', function ($scope, homeFactory) {
-    $scope.home = homeFactory;
-}]);
+module.exports = ['$scope', 'mnHomeFactory', function ($scope, mnHomeFactory) {
+    $scope.home = mnHomeFactory;
+}];

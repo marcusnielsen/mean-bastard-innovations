@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app').config(['$compileProvider', '$translateProvider', '$stateProvider', '$urlRouterProvider',
+module.exports = ['$compileProvider', '$translateProvider', '$stateProvider', '$urlRouterProvider',
     function($compileProvider, $translateProvider, $stateProvider, $urlRouterProvider){
 
         $translateProvider.useStaticFilesLoader({
@@ -18,11 +18,11 @@ angular.module('app').config(['$compileProvider', '$translateProvider', '$stateP
             .state('home', {
                 url: '/',
                 templateUrl: 'app/home/home.html',
-                controller: 'homeController'
+                controller: 'mnHomeController'
             })
             .state('contact', {
                 url: '/contact',
                 templateUrl: 'app/contact/contact.html',
-                controller: 'contactController'
+                controller: 'mnContactController'
             });
-}]);
+}];

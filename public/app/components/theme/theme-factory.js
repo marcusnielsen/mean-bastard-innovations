@@ -1,6 +1,8 @@
 'use strict';
+// TODO: Find best practice for using lodash in multiple files.
+var _ = require('lodash');
 
-angular.module('app').factory('themeFactory', ['$http', function ($http) {
+module.exports = ['$http', function ($http) {
     var factory = {};
 
     factory.selected = {
@@ -25,4 +27,4 @@ angular.module('app').factory('themeFactory', ['$http', function ($http) {
     };
 
     return factory;
-}])
+}];

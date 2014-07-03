@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app').controller('appController', ['$scope', '$translate', 'themeFactory', function ($scope, $translate, themeFactory) {
-    $scope.theme = themeFactory;
+module.exports = ['$scope', '$translate', 'mnThemeFactory', function ($scope, $translate, mnThemeFactory) {
+    $scope.theme = mnThemeFactory;
     $scope.translate = $translate;
-}]);
+}];
