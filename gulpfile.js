@@ -34,4 +34,11 @@ gulp.task('watch', function () {
     return rebundle();
 });
 
+gulp.task('build', ['clean'], function () {
+    return browserify('./public/app/app.js').bundle()
+        .pipe(vinylSourceStream('bundle.js'))
+        .pipe(streamify(uglify()))
+        .pipe(gulp.dest('./public/dist'));
+});
+
 gulp.task('default', ['clean', 'watch']);
