@@ -15,11 +15,11 @@
     "express": "latest",
     "lodash": "latest",
     "mongoose": "latest",
-    "require-dir": "latest",
+    "require-dir": "^0.1.0",
     "swig": "latest"
   },
   "scripts": {
-    "install": "napa; gulp"
+    "install": "napa; gulp build"
   },
   "napa": {
     "angular": "angular/bower-angular",
