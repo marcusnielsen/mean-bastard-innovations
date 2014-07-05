@@ -1,3 +1,3 @@
 module.exports = function (gulp) {
-  gulp.task('default', ['browserify']);
+  gulp.task('default', ['build']);
 };

@@ -19,7 +19,7 @@
     "swig": "latest"
   },
   "scripts": {
-    "install": "napa; gulp default"
+    "install": "napa; gulp build"
   },
   "napa": {
     "angular": "angular/bower-angular",

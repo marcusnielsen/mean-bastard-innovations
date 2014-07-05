@@ -4,11 +4,10 @@ var streamify = require('gulp-streamify');
 var browserify = require('browserify');
 
 module.exports = function (gulp) {
-    gulp.task('browserify', function () {
+    gulp.task('build', ['clean'], function () {
         return browserify('./public/app/app.js').bundle()
             .pipe(vinylSourceStream('bundle.js'))
             .pipe(streamify(uglify()))
             .pipe(gulp.dest('./public/dist'));
     });
 };
-
