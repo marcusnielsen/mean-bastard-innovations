@@ -16,19 +16,7 @@
     "lodash": "latest",
     "mongoose": "latest",
     "require-dir": "latest",
-    "swig": "latest"
-  },
-  "scripts": {
-    "install": "napa; gulp build"
-  },
-  "napa": {
-    "angular": "angular/bower-angular",
-    "angular-ui-bootstrap": "angular-ui/bootstrap-bower",
-    "angular-ui-router": "angular-ui/ui-router",
-    "angular-translate": "angular-translate/bower-angular-translate",
-    "angular-translate-loader-static": "angular-translate/bower-angular-translate-loader-static-files"
-  },
-  "devDependencies": {
+    "swig": "latest",
     "napa": "latest",
     "browserify": "latest",
     "gulp": "latest",
@@ -38,5 +26,18 @@
     "gulp-jshint": "latest",
     "watchify": "latest",
     "vinyl-source-stream": "latest"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/napa/bin/napa; ./node_modules/gulp/bin/gulp.js build"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-ui-bootstrap": "angular-ui/bootstrap-bower",
+    "angular-ui-router": "angular-ui/ui-router",
+    "angular-translate": "angular-translate/bower-angular-translate",
+    "angular-translate-loader-static": "angular-translate/bower-angular-translate-loader-static-files"
+  },
+  "devDependencies": {
+
   }
 }
